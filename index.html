@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Victoria Tagalan's Portfolio - Web Developer, Graphic Designer, and UI/UX Enthusiast">
+</head>
+
+<body>
+     <!--- NAVIGATION  -->
+    <nav id = "desktop-nav">
+        <div class="logo">Victoria Tagalan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Victoria Tagalan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!--- PROFILE SECTION -->
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assests/profile-pic.png" alt="VT profile">
+        </div>
+        <div class="section__text">
+        <p class = "section__text__p1">Hello, I'm</p>
+        <h1 class="title">Victoria Tagalan</h1>
+        <p class="section__text__p2">Web Developer</p>
+        <div class="btn-container">
+            <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assests/VictoriaT_CV.pdf', '_blank')"
+            >Download CV
+        </button>
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href = './#contact'"
+                >Contact</button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assests/linkedin.png" 
+                alt="My linkedin profile"
+                class="icon" 
+                onclick="window.open('https://www.linkedin.com/in/victoria-tagalan-849412282/', '_blank')"
+                />
+                <img 
+                src="./assests/github.png" 
+                alt="My github profile"
+                class="icon" 
+                onclick="window.open('https://github.com/Viktworya', '_blank')"/>
+            </div>
+        </div>
+    </section>
+
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <p class="section__text__p1">Get to Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <!-- Profile Image First -->
+        <div class="section__pic-container">
+            <img 
+                src="./assests/about-pic.png"
+                alt="Profile Picture"
+                class="about-pic"
+            />
+        </div>
+
+        <!-- Experience and Education Boxes -->
+        <div class="experience-education-container">
+            <div class="details-container">
+                <img 
+                    src="./assests/experience.png" 
+                    alt="experience icon"
+                    class="icon"
+                /> 
+                <h3>Experience</h3>
+                <p>1+years<br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+                <img 
+                    src="./assests/education.png" 
+                    alt="Education icon"
+                    class="icon"
+                /> 
+                <h3>Education</h3>
+                <p>BS Information Technology<br />K-12 Graduate</p>
+            </div>
+        </div>
+
+        <!-- About Text Below -->
+        <div class="text-container">
+            <p>As an aspiring Web Developer and Designer, my skills span front-end development (HTML, CSS, JavaScript, Bootstrap), WordPress customization, and UI/UX design using Figma and Canva. I also bring back-end experience with PHP, MySQL, and managing hosting environments like XAMPP and GitHub Pages. With additional programming knowledge in Python, Java, C++, and VB.NET, I approach every project with curiosity, adaptability, and am eager to contribute to teams that value continuous growth. :)</p>
+        </div>
+    </div>
+    <img 
+        src="./assests/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+    />
+</section>
+
+
+
+<!---EXPERIENCE-->
+<section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+  
+    <div class="experience-details-container">
+      <!-- FRONTEND -->
+      <div class="details-container">
+        <div class="article-container">
+          <article>
+            <img src="./assests/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>FRONTEND DEVELOPMENT</h3>
+              <p>Intermediate</p>
+              <div class="social-icons">
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/html-5.png" alt="html-5" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/css3.png" alt="css3" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/wordpress.png" alt="wordpress" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/javascript.png" alt="javascript" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/bootstrap.png" alt="bootstrap" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+  
+      <!-- BACKEND -->
+      <div class="details-container">
+        <div class="article-container">
+          <article>
+            <img src="./assests/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>BACK-END DEVELOPMENT</h3>
+              <p>Intermediate</p>
+              <div class="social-icons">
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/my-sql.png" alt="my-sql" />
+                <img width="48" height="48" src="assests/xampp-icon.png" alt="xampp" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/php.png" alt="php" />
+                <img width="48" height="48" src="https://img.icons8.com/color/48/git.png" alt="git" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+  
+      <!-- GRAPHIC DESIGN -->
+      <div class="details-container">
+        <div class="article-container">
+          <article>
+            <img src="./assests/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>GRAPHIC DESIGN | UX/UI</h3>
+              <p>Intermediate</p>
+              <div class="social-icons">
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/adobe-photoshop.png" alt="adobe-photoshop" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/adobe-illustrator.png" alt="adobe-illustrator" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/adobe-after-effects.png" alt="adobe-after-effects" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/adobe-xd.png" alt="adobe-xd" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/adobe-dreamweaver.png" alt="adobe-dreamweaver" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/canva.png" alt="canva" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/figma.png" alt="figma" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+  
+      <!-- MOBILE DEVELOPMENT -->
+      <div class="details-container mobile-box">
+        <div class="article-container">
+          <article>
+            <img src="./assests/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>MOBILE DEVELOPMENT</h3>
+              <p>Basic</p>
+              <div class="social-icons">
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/swift.png" alt="swift" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/android-studio--v3.png" alt="android-studio" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/java-coffee-cup-logo.png" alt="java" />
+                <img width="48" height="48" src="assests/xcode-icon.png" alt="xcode" />
+                <img width="48" height="48" src="assests/kotlin-icon.png" alt="kotlin" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+  
+      <!-- MICROSOFT OFFICE -->
+      <div class="details-container microsoft-box">
+        <div class="article-container">
+          <article>
+            <img src="./assests/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>MICROSOFT OFFICE</h3>
+              <p>Experienced</p>
+              <div class="social-icons">
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/microsoft-excel-2019.png" alt="excel" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/microsoft-word-2019.png" alt="word" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/microsoft-powerpoint-2019.png" alt="powerpoint" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/microsoft-outlook-2019.png" alt="outlook" />
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/microsoft-access-2019.png" alt="access" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  
+    <img 
+    src="./assests/arrow.png" 
+    alt="Arrow icon" 
+    class="icon arrow"
+    onclick="location.href='./#projects'"/>
+  </section>
+
+  <!--PROJECTS-->
+    <section id = "projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img 
+                src="./assests/project-1.png" 
+                alt="Project 1"
+                class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project">Pawsh Pets</h2>
+            <div class="btn-container">
+            <button 
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Viktworya', '_blank')"
+                >
+                    Github
+            </button>
+            </div>
+            <button 
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://ria.infinityfreeapp.com/', '_blank')"
+                >
+                    Live Demo
+            </button>
+            </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img 
+                src="./assests/project-2.png" 
+                alt="Project 1"
+                class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project">Nurturing Noses</h2>
+            <div class="btn-container">
+            <button 
+                class="btn btn-color-2 project-btn"
+                onclick="location.href ='https://github.com/Viktworya'"
+                >
+                    Github
+            </button>
+            </div>
+            <button 
+                class="btn btn-color-2 project-btn"
+                onclick="location.href ='https://github.com/Viktworya'"
+                >
+                    Live Demo
+            </button>
+            </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img 
+                src="./assests/project-3.png" 
+                alt="Project 1"
+                class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project">ROCKERS (E-commerce)</h2>
+            <div class="btn-container">
+            <button 
+                class="btn btn-color-2 project-btn"
+                onclick="location.href ='https://github.com/Viktworya'"
+                >
+                    Github
+            </button>
+            </div>
+            <button 
+                class="btn btn-color-2 project-btn"
+                onclick="location.href ='https://tagalanvictoria03.wixsite.com/rockers'"
+                >
+                    Live Demo
+            </button>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<script src="script.js"></script>
+</body>
+</html>

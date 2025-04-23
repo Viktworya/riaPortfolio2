@@ -1,0 +1,155 @@
+/* Media Queries - Consolidated and Optimized */
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    #experience, 
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+    #profile,
+    .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section,
+    .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+        padding: 4rem 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+    /* Experience section adjustments */
+    .experience-details-container {
+        grid-template-columns: 1fr;
+    }
+    .mobile-box,
+    .microsoft-box {
+        grid-column: 1;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /* About section specific adjustments */
+    .section-container {
+        flex-direction: column;
+    }
+    .experience-education-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .details-container {
+        width: 100%;
+        max-width: 400px;
+    }
+    /* Projects section adjustments */
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact,
+    footer {
+        height: auto;
+        min-height: 40vh;
+    }
+    #profile {
+        height: auto;
+        min-height: 83vh;
+        margin-bottom: 0;
+    }
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container {
+        width: 200px;
+        height: 200px;
+    }
+    .section__text__p1,
+    .section__text__p2 {
+        font-size: 1rem;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .text-container {
+        text-align: left;
+        padding: 0;
+    }
+    /* Smaller devices adjustments */
+    .details-container,
+    .project-container {
+        width: 100%;
+    }
+    .project-img {
+        height: 150px;
+    }
+}
+
+/* Very small devices (phones, 400px and down) */
+@media screen and (max-width: 400px) {
+    .section__pic-container {
+        width: 180px;
+        height: 180px;
+    }
+    .title {
+        font-size: 1.6rem;
+    }
+    .project-btn {
+        width: 100%;
+    }
+}
+
