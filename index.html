@@ -7,21 +7,35 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
-    <meta name="description" content="Victoria Tagalan's Portfolio - Web Developer, Graphic Designer, and UI/UX Enthusiast">
+    <!--SEO-->
+    <meta name="keywords" content="Victoria Tagalan, Web Developer, Frontend, Backend, Portfolio, WordPress, Graphic Designer">
+<meta name="author" content="Victoria Tagalan">
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
      <!--- NAVIGATION  -->
     <nav id = "desktop-nav">
-        <div class="logo">Victoria Tagalan</div>
+        <div class="logo">
+          <!---DARK MODE-->
+          <button id="theme-toggle">
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/do-not-disturb-2.png" 
+            alt="do-not-disturb-2"/>
+          </button>
+          Victoria Tagalan</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li></li>
             </ul>
         </div>
+        
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">Victoria Tagalan</div>
@@ -42,12 +56,14 @@
     <!--- PROFILE SECTION -->
     <section id="profile">
         <div class="section_pic-container">
-            <img src="./assests/profile-pic.png" alt="VT profile">
+            <img src="./assests/profile-pic-2.png" alt="VT profile">
         </div>
         <div class="section__text">
         <p class = "section__text__p1">Hello, I'm</p>
         <h1 class="title">Victoria Tagalan</h1>
         <p class="section__text__p2">Web Developer</p>
+        
+        <!---CV AND CONTACT-->
         <div class="btn-container">
             <button 
                 class="btn btn-color-2" 
@@ -99,7 +115,7 @@
                     class="icon"
                 /> 
                 <h3>Experience</h3>
-                <p>1+years<br />Frontend Development</p>
+                <p>2+years<br />Frontend Development<br>(Academic)</p>
             </div>
             <div class="details-container">
                 <img 
@@ -108,7 +124,7 @@
                     class="icon"
                 /> 
                 <h3>Education</h3>
-                <p>BS Information Technology<br />K-12 Graduate</p>
+                <p>BS Information Technology (Graduate 2025)<br />K-12 Graduate</p>
             </div>
         </div>
 
@@ -255,6 +271,8 @@
                 class="project-img"/>
             </div>
             <h2 class="experience-sub-title project">Pawsh Pets</h2>
+            <p> I created this website from scratch using WordPress on a local host (XAMPP), 
+              focusing on user-friendly navigation for easy browsing and appointment booking of pet-related services.I later published it using a domain hosted on InfinityFree</p>
             <div class="btn-container">
             <button 
                 class="btn btn-color-2 project-btn"
@@ -278,21 +296,23 @@
                 class="project-img"/>
             </div>
             <h2 class="experience-sub-title project">Nurturing Noses</h2>
+            <p>I created this website as a sample recreation, similar to the PAWS Philippines website.</p>
             <div class="btn-container">
             <button 
                 class="btn btn-color-2 project-btn"
-                onclick="location.href ='https://github.com/Viktworya'"
+                onclick="window.open('https://github.com/Viktworya', '_blank')"
                 >
                     Github
             </button>
             </div>
             <button 
                 class="btn btn-color-2 project-btn"
-                onclick="location.href ='https://github.com/Viktworya'"
+                onclick="window.open('https://github.com/Viktworya', '_blank')"
                 >
                     Live Demo
             </button>
             </div>
+
             <div class="details-container color-container">
             <div class="article-container">
                 <img 
@@ -301,25 +321,132 @@
                 class="project-img"/>
             </div>
             <h2 class="experience-sub-title project">ROCKERS (E-commerce)</h2>
+            <p>I created this e-commerce website on Wix (wixsite.com), featuring a variety of Rock/Band T-shirts. 
+              Clients can easily browse products, add items to their cart, and proceed to checkout for a seamless shopping experience.</p>
             <div class="btn-container">
             <button 
                 class="btn btn-color-2 project-btn"
-                onclick="location.href ='https://github.com/Viktworya'"
+                onclick="window.open('https://github.com/Viktworya', '_blank')"
                 >
                     Github
             </button>
             </div>
             <button 
                 class="btn btn-color-2 project-btn"
-                onclick="location.href ='https://tagalanvictoria03.wixsite.com/rockers'"
+                onclick="window.open('https://tagalanvictoria03.wixsite.com/rockers', '_blank')"
                 >
                     Live Demo
             </button>
             </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img 
+                src="./assests/project-4.png" 
+                alt="Project 1"
+                class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project">Graphic Design Portfolio</h2>
+            <p>This is my Behance Account where I post some of my Graphic Design Projects</p>
+            <div class="btn-container">
+            <button 
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Viktworya', '_blank')"
+                >
+                    Behance
+            </button>
+            </div>
+            <button 
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.linkedin.com/in/victoria-tagalan-849412282/', '_blank')"
+                >
+                    Linkedin
+            </button>
+            </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img 
+                src="./assests/project-5.png" 
+                alt="Project 1"
+                class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project">Athena's Vape Shop (POS)</h2>
+            <p>I developed a custom POS system using Python and Kivy for Athena's Vape
+               Shop as part of an academic project, aiming to enhance sales management, inventory tracking, and customer experience.</p>
+            <div class="btn-container">
+            <button 
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Viktworya', '_blank')"
+                >
+                    Github
+            </button>
+            </div>
+            <button 
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Viktworya', '_blank')"
+                >
+                    Live Demo
+            </button>
+            </div>
+
         </div>
     </div>
-    
+          <!--- NAVIGATION TOP BACK -->
+          <button id="backToTop" title="Go to top">   
+            <img 
+           src="./assests/arrow_up.png" 
+           alt="Arrow icon" 
+           class="icon arrow"
+           onclick="location.href='./#experience'"
+       /></button>
 </section>
+
+ <!-- CONTACT -->
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img 
+        src="./assests/email.png" 
+        alt="Email icon"
+        class="icon contact-icon"/>
+      <p><a href="mailto:tagalanvictoria03@gmail.com">Email</a></p>
+    </div>
+
+    <div class="contact-info-container">
+      <img 
+        src="./assests/linkedin.png" 
+        alt="LinkedIn icon"
+        class="icon contact-icon"/>
+      <p><a href="https://www.linkedin.com/in/victoria-tagalan-849412282/" target="_blank">LinkedIn</a></p>
+    </div>
+
+    <div class="contact-info-container">
+      <img 
+        src="./assests/behance.png" 
+        alt="Behance icon"
+        class="icon contact-icon"/>
+      <p><a href="https://www.behance.net/victoriatagalan" target="_blank">Behance</a></p>
+    </div>
+
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li></li>
+    </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2025 Victoria Tagalan. All Rights Reserved.</p>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
