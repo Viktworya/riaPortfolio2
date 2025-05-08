@@ -83,6 +83,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Toggle Dark Mode (light/dark)
+const themeToggle = document.getElementById("theme-toggle");
+const themeToggleMobile = document.getElementById("theme-toggle-mobile");
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+
+themeToggle.addEventListener("click", toggleDarkMode);
+themeToggleMobile.addEventListener("click", toggleDarkMode);
+
+// Dark Mode Toggle Function
+document.getElementById("theme-toggle").addEventListener("click", function() {
+  document.body.classList.toggle("dark-mode");
+});
+
+
   // Load saved theme from localStorage
   const savedTheme = localStorage.getItem('theme') || 'light';
   if (savedTheme === 'dark') {

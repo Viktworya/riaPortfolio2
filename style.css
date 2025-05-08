@@ -512,6 +512,7 @@ body.dark-mode p{
   color: #fff; /* Change text to white in dark mode */
 }
 
+
 body.dark-mode .details-container p,
 body.dark-mode  .details-container h3{
     color: #000000;
@@ -546,6 +547,23 @@ body.dark-mode img.icon.arrow {
   body.dark-mode .nav-links a:hover {
     color: #90f9c4; /* Dark mode hover */
   }
+
+  /* Style for dark mode toggle on small screens */
+#hamburger-nav .theme-toggle-btn {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none; /* Hide by default on larger screens */
+}
+
+/* Show the dark mode toggle on mobile screens */
+@media (max-width: 768px) {
+    #hamburger-nav .theme-toggle-btn {
+        display: block;
+    }
+}
+
   
   /* Theme Toggle Button */
   #theme-toggle {
