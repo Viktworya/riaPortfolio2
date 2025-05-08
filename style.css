@@ -662,3 +662,28 @@ body.dark-mode img.icon.arrow {
   footer p {
     text-align: center;
   }
+
+  /* Skill Level Bars JS na css*/
+  .skill-bar-wrapper {
+    margin-top: 1rem;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    transition: width 1s ease-out;
+  }
+  
+  
+  .details-container {
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    perspective: 1000px;
+  }
+  

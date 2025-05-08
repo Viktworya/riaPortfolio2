@@ -118,3 +118,60 @@ backToTopBtn.addEventListener("click", function () {
     behavior: "smooth"
   });
 });
+
+
+
+
+//Skill Level Bars
+
+document.addEventListener('DOMContentLoaded', () => {
+  const skillLevels = {
+    "FRONTEND DEVELOPMENT": 70,
+    "BACK-END DEVELOPMENT": 65,
+    "GRAPHIC DESIGN | UX/UI": 75,
+    "MOBILE DEVELOPMENT": 40,
+    "MICROSOFT OFFICE": 90,
+  };
+
+  document.querySelectorAll('.details-container').forEach(container => {
+    const heading = container.querySelector('h3')?.innerText.trim();
+    if (skillLevels[heading]) {
+      const level = skillLevels[heading];
+      const barWrapper = document.createElement('div');
+      barWrapper.className = 'skill-bar-wrapper';
+
+      const bar = document.createElement('div');
+      bar.className = 'skill-bar';
+      bar.style.width = '0%';
+      barWrapper.appendChild(bar);
+      container.appendChild(barWrapper);
+
+      // Animate width
+      setTimeout(() => {
+        bar.style.width = `${level}%`;
+      }, 300);
+    }
+  });
+});
+
+
+document.querySelectorAll(".details-container").forEach((card) => {
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * 10;
+    const rotateY = ((x - centerX) / centerX) * -10;
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "rotateX(0) rotateY(0)";
+  });
+
+  card.addEventListener("mouseenter", () => {
+    card.style.transition = "transform 0.1s ease";
+  });
+});
